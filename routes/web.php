@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('frontend.index');
+})->name('home');
+
+Route::get('登入', function () {
+    return view('frontend.Sign in');
+})->name('登入');
+
+Route::get('註冊', function () {
+    return view('frontend.Register');
+})->name('註冊');
